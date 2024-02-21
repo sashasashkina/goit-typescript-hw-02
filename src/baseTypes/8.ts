@@ -3,6 +3,13 @@
   який може містити значення "male", "female". Створіть змінну myGender цього типу.
 */
 
-const myGender;
+type Gender = "male" | "female";
+
+const myGender: Gender = "female";
+if (myGender === "female") {
+  console.log("Gender: woman");
+} else if (myGender === "man") {
+  console.log("Gender: man");
+}
 
 export {};
